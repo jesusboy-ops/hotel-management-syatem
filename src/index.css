@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border-radius: 7px !important;
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/70 dark:bg-navy/70 backdrop-blur-lg border border-white/30 dark:border-white/10;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
