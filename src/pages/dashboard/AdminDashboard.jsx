@@ -29,7 +29,7 @@ const AdminDashboard = () => {
     <div className={`min-h-screen ${isDarkMode ? 'bg-dark-bg' : 'bg-cream'}`}>
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
       
-      <div className="ml-64 p-8">
+      <div className="lg:ml-64 p-4 md:p-6 lg:p-8 pt-20 lg:pt-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <h1 className={`text-4xl font-bold mb-2 ${isDarkMode ? 'text-cream' : 'text-navy'}`}>

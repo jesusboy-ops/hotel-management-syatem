@@ -19,7 +19,7 @@ const Contact = () => {
           Contact Us
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Form */}
           <div className="glass-effect p-8 rounded-2xl shadow-xl">
             <h2 className={`text-2xl font-bold mb-6 ${isDarkMode ? 'text-cream' : 'text-navy'}`}>

@@ -21,7 +21,7 @@ const ReceptionDashboard = () => {
     <div className={`min-h-screen ${isDarkMode ? 'bg-dark-bg' : 'bg-cream'}`}>
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
       
-      <div className="ml-64 p-8">
+      <div className="lg:ml-64 p-4 md:p-6 lg:p-8 pt-20 lg:pt-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <h1 className={`text-4xl font-bold mb-2 ${isDarkMode ? 'text-cream' : 'text-navy'}`}>
@@ -34,7 +34,7 @@ const ReceptionDashboard = () => {
 
           {activeTab === 'calendar' && (
             <>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
                 <div className="glass-effect p-6 rounded-2xl shadow-lg hover:scale-105 transition-all">
                   <div className="flex items-center justify-between mb-3">
                     <div className="w-12 h-12 rounded-xl bg-gold flex items-center justify-center text-2xl">

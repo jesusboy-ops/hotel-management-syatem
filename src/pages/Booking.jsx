@@ -37,7 +37,7 @@ const Booking = () => {
         </p>
 
         {/* Filter Bar */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
+        <div className="flex justify-center gap-3 md:gap-4 mb-12 flex-wrap">
           {['all', 'suite', 'standard'].map(type => (
             <button
               key={type}

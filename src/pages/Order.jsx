@@ -50,12 +50,12 @@ const Order = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="flex justify-center gap-4 mb-12 flex-wrap">
+        <div className="flex justify-center gap-3 md:gap-4 mb-12 flex-wrap">
           {['all', 'Appetizer', 'Main Course', 'Dessert'].map(cat => (
             <button
               key={cat}
               onClick={() => setCategory(cat)}
-              className={`px-8 py-3 font-semibold transition-all shadow-lg ${
+              className={`px-4 md:px-8 py-3 font-semibold transition-all shadow-lg text-sm md:text-base ${
                 category === cat
                   ? 'bg-gold text-navy scale-105'
                   : isDarkMode
@@ -68,9 +68,9 @@ const Order = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Menu Items */}
-          <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
+          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {filteredItems.map(item => (
               <div 
                 key={item.id}

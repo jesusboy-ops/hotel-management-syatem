@@ -23,7 +23,7 @@ const UserDashboard = () => {
     <div className={`min-h-screen ${isDarkMode ? 'bg-dark-bg' : 'bg-cream'}`}>
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
       
-      <div className="ml-64 p-8">
+      <div className="lg:ml-64 p-4 md:p-6 lg:p-8 pt-20 lg:pt-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="mb-8">
@@ -71,7 +71,7 @@ const UserDashboard = () => {
                     </span>
                   </div>
                   
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <img 
                         src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600" 
@@ -238,7 +238,7 @@ const UserDashboard = () => {
                           {booking.status}
                         </span>
                       </div>
-                      <div className="grid md:grid-cols-3 gap-4 mb-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
                         <div>
                           <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>Check-in</p>
                           <p className={`font-semibold ${isDarkMode ? 'text-cream' : 'text-navy'}`}>{booking.checkIn}</p>
